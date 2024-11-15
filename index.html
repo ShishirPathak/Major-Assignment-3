@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Collaboration Network</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Author Affiliation Network</h1>
+    <h2>Major Assignment 3 [Shishir Kumar Pathak] </h2>
+  </header>
+
+  <div id="control-panel">
+    <div class="control">
+        <label for="slider-charge-strength">Charge Strength</label>
+        <input type="range" id="slider-charge-strength" min="-10" max="0" step=".1" value="-1">
+        <input type="number" id="input-charge-strength" value="-1" step="1" />
+    </div>
+    <div class="control">
+        <label for="slider-collision-radius">Collision Radius</label>
+        <input type="range" id="slider-collision-radius" min="2" max="20" step="1" value="6">
+        <input type="number" id="input-collision-radius" value="6" step="1" />
+    </div>
+    <div class="control">
+        <label for="slider-link-strength">Link Strength</label>
+        <input type="range" id="slider-link-strength" min="0" max="2" step=".1" value="1">
+        <input type="number" id="input-link-strength" value="1" step=".1" />
+    </div>
+  </div>
+
+  <div id="network-chart-container">
+    <script src="network.js"></script>
+  </div>
+</body>
+</html>
